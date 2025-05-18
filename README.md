@@ -17,6 +17,7 @@ This is a basic "To-Do list application" built using "NestJS" and "MongoDB". It 
 - MongoDB – NoSQL database
 - Docker & Docker Compose – For containerizing and running all services
 - ELK Stack – Logging and visualization
+- React - Frontend
 
 
 
@@ -27,6 +28,7 @@ This is a basic "To-Do list application" built using "NestJS" and "MongoDB". It 
   Elasticsearch | Heavy service with many dependencies. Docker makes setup simple and clean. 
   Logstash      | Easy to configure and run inside a container. 
   Kibana        | Gives a visual dashboard inside a container — no need to install anything on the host. 
+  React         |  To ensure consistent environment setup, simplify deployment, and seamlessly integrate with backend service and Axios used for API calls.
 
 Using Docker makes everything portable, easy to test, and avoids system-level issues.
 
@@ -35,6 +37,21 @@ Using Docker makes everything portable, easy to test, and avoids system-level is
  - first install docker desktop in your system
 -  use "docker-compose up" command  -->this will run your containers
 
+ ##  API Endpoints & URLs
+
+  ## Frontend
+   - Localhost URL: http://localhost
+
+  ## Backend (NestJS)
+   - Base API URL: http://localhost:3000/api/todo
+
+  ## ELK Stack (Logging & Monitoring)
+
+    - Elasticsearch: http://localhost:9200  
+
+    - Kibana: http://localhost:5601 
+ 
+    - Logstash: Configured internally to collect logs (no direct UI access)
 
 ## Kibana Dashboard Screenshot and description
  
